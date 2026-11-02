@@ -1,0 +1,22 @@
+Using fake packet:
+  0000 0100 0001 0000 0000 0000 0365 6475
+  0000 0200 01
+
+Answers (uncompressed):
+    record: edu. (type 2 = NS, TTL 40339)
+    rdata : a.edu-servers.net.
+
+    record: edu. (type 2 = NS, TTL 40339)
+    rdata : b.edu-servers.net.
+
+    record: edu. (type 2 = NS, TTL 40339)
+    rdata : c.edu-servers.net.
+
+Response as byte block (84 bytes):
+  0000 8180 0001 0003 0000 0000 0365 6475
+  0000 0200 01c0 0c00 0200 0100 009d 9300
+  1301 610b 6564 752d 7365 7276 6572 7303
+  6e65 7400 c00c 0002 0001 0000 9d93 0004
+  0162 c023 c00c 0002 0001 0000 9d93 0004
+  0163 c023
+

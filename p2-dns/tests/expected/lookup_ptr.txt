@@ -1,0 +1,38 @@
+Using fake packet:
+  0000 0100 0001 0000 0000 0000 0239 3903
+  3132 3603 3132 3603 3133 3407 696e 2d61
+  6464 7204 6172 7061 0000 0c00 01
+
+Answers (uncompressed):
+    record: 99.126.126.134.in-addr.arpa. (type 12 = PTR, TTL 1483)
+    rdata : it-www1.jmu.edu.
+
+    record: 99.126.126.134.in-addr.arpa. (type 12 = PTR, TTL 1483)
+    rdata : spcecoms.jmu.edu.
+
+    record: 99.126.126.134.in-addr.arpa. (type 12 = PTR, TTL 1483)
+    rdata : groups.jmu.edu.
+
+    record: 99.126.126.134.in-addr.arpa. (type 12 = PTR, TTL 1483)
+    rdata : groups.dukes.jmu.edu.
+
+    record: 99.126.126.134.in-addr.arpa. (type 12 = PTR, TTL 1483)
+    rdata : it-www2.jmu.edu.
+
+    record: 99.126.126.134.in-addr.arpa. (type 12 = PTR, TTL 1483)
+    rdata : athletics.jmu.edu.
+
+Response as byte block (191 bytes):
+  0000 8180 0001 0006 0000 0000 0239 3903
+  3132 3603 3132 3603 3133 3407 696e 2d61
+  6464 7204 6172 7061 0000 0c00 01c0 0c00
+  0c00 0100 0005 cb00 1107 6974 2d77 7777
+  3103 6a6d 7503 6564 7500 c00c 000c 0001
+  0000 05cb 000b 0873 7063 6563 6f6d 73c0
+  41c0 0c00 0c00 0100 0005 cb00 0906 6772
+  6f75 7073 c041 c00c 000c 0001 0000 05cb
+  000f 0667 726f 7570 7305 6475 6b65 73c0
+  41c0 0c00 0c00 0100 0005 cb00 0a07 6974
+  2d77 7777 32c0 41c0 0c00 0c00 0100 0005
+  cb00 0c09 6174 686c 6574 6963 73c0 41
+

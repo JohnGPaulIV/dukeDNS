@@ -1,0 +1,14 @@
+Sending 17 bytes to 127.0.0.1:
+  0001 0100 0001 0000 0000 0000 0000 0100
+  01
+
+Received 51 bytes from 127.0.0.1:
+  0001 8180 0001 0001 0000 0000 0000 0100
+  0101 620c 726f 6f74 2d73 6572 7665 7273
+  036e 6574 0000 0100 0100 008c a000 04aa
+  f7aa 02
+
+Domain name: b.root-servers.net.
+Record type: IN A
+TTL: 36000
+IPv4 address: 170.247.170.2

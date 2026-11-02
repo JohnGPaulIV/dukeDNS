@@ -1,0 +1,13 @@
+Received 25 bytes from 127.0.0.1:
+  0002 0100 0001 0000 0000 0000 036a 6d75
+  0365 6475 0000 0100 01
+
+Question: jmu.edu. A IN
+NOTE: XID=2 is a special case for testing purposes
+Names in resource records will not be compressed
+
+Sending response to 127.0.0.1:
+  0002 8180 0001 0001 0000 0000 036a 6d75
+  0365 6475 0000 0100 0103 6a6d 7503 6564
+  7500 0001 0001 0000 0384 0004 867e 7e63
+

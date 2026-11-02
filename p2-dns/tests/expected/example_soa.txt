@@ -1,0 +1,8 @@
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 52173
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;example.com. IN SOA
+
+;; ANSWER SECTION:
+example.com.                   IN SOA 1803.     ns.icann.org. noc.dns.icann.org. 2025011715 7200 3600 1209600 3600

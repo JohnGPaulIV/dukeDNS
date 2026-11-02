@@ -1,0 +1,13 @@
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 57548
+;; flags: qr rd ra; QUERY: 1, ANSWER: 6, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;99.126.126.134.in-addr.arpa. IN PTR
+
+;; ANSWER SECTION:
+99.126.126.134.in-addr.arpa.   IN PTR 1483.     it-www1.jmu.edu.
+99.126.126.134.in-addr.arpa.   IN PTR 1483.     spcecoms.jmu.edu.
+99.126.126.134.in-addr.arpa.   IN PTR 1483.     groups.jmu.edu.
+99.126.126.134.in-addr.arpa.   IN PTR 1483.     groups.dukes.jmu.edu.
+99.126.126.134.in-addr.arpa.   IN PTR 1483.     it-www2.jmu.edu.
+99.126.126.134.in-addr.arpa.   IN PTR 1483.     athletics.jmu.edu.

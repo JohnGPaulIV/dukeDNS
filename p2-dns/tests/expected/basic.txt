@@ -1,0 +1,8 @@
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 2
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;jmu.edu. IN A
+
+;; ANSWER SECTION:
+jmu.edu.                       IN A 900.        134.126.126.99

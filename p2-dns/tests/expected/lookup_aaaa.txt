@@ -1,0 +1,38 @@
+Using fake packet:
+  0000 0100 0001 0000 0000 0000 0765 7861
+  6d70 6c65 0363 6f6d 0000 1c00 01
+
+Answers (uncompressed):
+    record: example.com. (type 28 = AAAA, TTL 21)
+    rdata : 2600:1406:3a00:21::173e:2e65
+
+    record: example.com. (type 28 = AAAA, TTL 21)
+    rdata : 2600:1406:bc00:53::b81e:94c8
+
+    record: example.com. (type 28 = AAAA, TTL 21)
+    rdata : 2600:1408:ec00:36::1736:7f24
+
+    record: example.com. (type 28 = AAAA, TTL 21)
+    rdata : 2600:1406:3a00:21::173e:2e66
+
+    record: example.com. (type 28 = AAAA, TTL 21)
+    rdata : 2600:1408:ec00:36::1736:7f31
+
+    record: example.com. (type 28 = AAAA, TTL 21)
+    rdata : 2600:1406:bc00:53::b81e:94ce
+
+Response as byte block (197 bytes):
+  0000 8180 0001 0006 0000 0000 0765 7861
+  6d70 6c65 0363 6f6d 0000 1c00 01c0 0c00
+  1c00 0100 0000 1500 1026 0014 063a 0000
+  2100 0000 0017 3e2e 65c0 0c00 1c00 0100
+  0000 1500 1026 0014 06bc 0000 5300 0000
+  00b8 1e94 c8c0 0c00 1c00 0100 0000 1500
+  1026 0014 08ec 0000 3600 0000 0017 367f
+  24c0 0c00 1c00 0100 0000 1500 1026 0014
+  063a 0000 2100 0000 0017 3e2e 66c0 0c00
+  1c00 0100 0000 1500 1026 0014 08ec 0000
+  3600 0000 0017 367f 31c0 0c00 1c00 0100
+  0000 1500 1026 0014 06bc 0000 5300 0000
+  00b8 1e94 ce
+

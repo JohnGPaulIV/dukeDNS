@@ -1,0 +1,12 @@
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 45675
+;; flags: qr aa rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 1
+
+;; QUESTION SECTION:
+;1.1.0.127.in-addr.arpa. IN PTR
+
+;; ANSWER SECTION:
+1.1.0.127.in-addr.arpa.        IN PTR 0.        stu.cs.jmu.edu.
+1.1.0.127.in-addr.arpa.        IN PTR 0.        stu.
+
+;; ADDITIONAL SECTION:
+1.1.0.127.in-addr.arpa.        IN CNAME 1769.   student.cs.jmu.edu.

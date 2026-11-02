@@ -1,0 +1,14 @@
+Using fake packet:
+  0000 0100 0001 0000 0000 0000 0373 7475
+  0263 7303 6a6d 7503 6564 7500 0005 0001
+
+Answers (uncompressed):
+    record: stu.cs.jmu.edu. (type 5 = CNAME, TTL 1769)
+    rdata : student.cs.jmu.edu.
+
+Response as byte block (54 bytes):
+  0000 8180 0001 0001 0000 0000 0373 7475
+  0263 7303 6a6d 7503 6564 7500 0005 0001
+  c00c 0005 0001 0000 06e9 000a 0773 7475
+  6465 6e74 c010
+

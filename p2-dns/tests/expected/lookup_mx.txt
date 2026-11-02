@@ -1,0 +1,15 @@
+Using fake packet:
+  0000 0100 0001 0000 0000 0000 036a 6d75
+  0365 6475 0000 0f00 01
+
+Answers (uncompressed):
+    record: jmu.edu. (type 15 = MX, TTL 1538)
+    rdata : jmu-edu.mail.protection.outlook.com. (preference 0)
+
+Response as byte block (76 bytes):
+  0000 8180 0001 0001 0000 0000 036a 6d75
+  0365 6475 0000 0f00 01c0 0c00 0f00 0100
+  0006 0200 2700 0007 6a6d 752d 6564 7504
+  6d61 696c 0a70 726f 7465 6374 696f 6e07
+  6f75 746c 6f6f 6b03 636f 6d00
+

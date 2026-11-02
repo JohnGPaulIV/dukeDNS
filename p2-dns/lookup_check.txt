@@ -1,0 +1,13 @@
+Using fake packet:
+  0000 0100 0001 0000 0000 0000 036a 6d75
+  0365 6475 0000 0100 01
+
+Answers (uncompressed):
+    record: jmu.edu. (type 1 = A, TTL 900)
+    rdata : 134.126.126.99
+
+Response as byte block (41 bytes):
+  0000 8180 0001 0001 0000 0000 036a 6d75
+  0365 6475 0000 0100 01c0 0c00 0100 0100
+  0003 8400 0486 7e7e 63
+

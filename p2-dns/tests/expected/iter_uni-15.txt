@@ -1,0 +1,85 @@
+;; ITERATIVE LOOKUP - stu.cs.jmu.edu
+
+;; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; FINDING ROOT NAMESERVER
+
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 3
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;. IN NS
+
+;; ANSWER SECTION:
+.                              IN NS 126684.    c.root-servers.net.
+
+;; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; FINDING ROOT IP ADDRESS
+
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 3
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;c.root-servers.net. IN A
+
+;; ANSWER SECTION:
+c.root-servers.net.            IN A 604800.     192.33.4.12
+
+;; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; FINDING EDU NAMESERVER
+
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 3
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;edu. IN NS
+
+;; ANSWER SECTION:
+edu.                           IN NS 40339.     b.edu-servers.net.
+
+;; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; FINDING EDU IP ADDRESS
+
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 3
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;b.edu-servers.net. IN A
+
+;; ANSWER SECTION:
+b.edu-servers.net.             IN A 40801.      192.33.14.30
+
+;; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; FINDING JMU.EDU NAMESERVER
+
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 3
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;jmu.edu. IN NS
+
+;; ANSWER SECTION:
+jmu.edu.                       IN NS 1798.      it-ns1-19.jmu.edu.
+
+;; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; FINDING JMU.EDU IP ADDRESS
+
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 3
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;it-ns1-19.jmu.edu. IN A
+
+;; ANSWER SECTION:
+it-ns1-19.jmu.edu.             IN A 3600.       134.126.115.30
+
+;; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; FINDING STU.CS.JMU.EDU IP ADDRESS
+
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 3
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;stu.cs.jmu.edu. IN A
+
+;; ANSWER SECTION:
+stu.cs.jmu.edu.                IN A 0.          127.0.1.1

@@ -1,0 +1,8 @@
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 13835
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;jmu.edu. IN MX
+
+;; ANSWER SECTION:
+jmu.edu.                       IN MX 1538.      0 jmu-edu.mail.protection.outlook.com.

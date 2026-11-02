@@ -1,0 +1,5 @@
+;; ->>HEADER<<- opcode: QUERY, status: SERVFAIL, id: 22016
+;; flags: qr aa rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;asdf. IN A

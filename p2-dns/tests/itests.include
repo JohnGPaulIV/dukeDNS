@@ -1,0 +1,66 @@
+# list of integration tests
+#  format: run_test <TAG> <ARGS>
+#    <TAG>      used as the root for all filenames (i.e., "expected/$TAG.txt")
+#    <ARGS>     command-line arguments to test
+
+# sends a message to the server and prints the response in a formatted way
+BASIC client ping                    ""
+
+# DNS fundamentals: requesting and processing A records
+MIN dns basic                        "-x 2 jmu.edu A"
+MIN dns compress                     "google.com A"
+MIN dns localhost                    "localhost A"
+MIN dns bad_domain                   "-x 22016 asdf A"
+
+# DNS features: multiple results and AAAA records
+MIN multi multi_a                    "-x 7059 example.com A"
+MIN multi aaaa                       "-x 4801 example.com AAAA"
+MIN multi double_compress            "-x 42937 example.com NS"
+MIN multi no_ipv6                    "-x 54920 localhost AAAA"
+
+# Other DNS records
+MIN record jmu_ns                    "-x 23379 jmu.edu NS"
+MIN record jmu_mx                    "-x 13835 jmu.edu MX"
+MIN record empty                     "-x 57867 example.com MX"
+
+# Mixed CNAME and other records
+INTER mixed cname_basic              "-x 49602 stu.cs.jmu.edu CNAME"
+INTER mixed cname_a                  "-x 32412 stu A"
+INTER mixed cname_add                "-x 51120 www.jmu.edu CNAME"
+
+# SOA and authority sections
+INTER auth jmu_soa                   "-x 62055 jmu.edu SOA"
+INTER auth example_soa               "-x 52173 example.com SOA"
+INTER auth auth_soa                  "-x 61906 www.jmu.edu AAAA"
+INTER auth subauth                   "-x 10099 fac.cs.jmu.edu AAAA"
+
+# Prep for DNS server by building lookup table
+INTER stable lookup                  "jmu.edu A"
+INTER stable lookup_edu              "edu NS"
+INTER stable lookup_cname            "stu.cs.jmu.edu CNAME"
+INTER stable lookup_mx               "jmu.edu MX"
+
+# Basic DNS server
+INTER sdns pingserv                  ""
+INTER sdns serv_a                    "-x 2 jmu.edu A"
+INTER sdns serv_compress             "google.com A"
+
+# Pointer records
+ADV ptr basic_ptr                    "-x 870 134.126.141.221 PTR"
+ADV ptr multi_ptr                    "-x 57548 134.126.126.99 PTR"
+ADV ptr mixed_ptr                    "-x 45675 127.0.1.1 PTR"
+ADV ptr no_ptr                       "-x 56769 151.101.67.5 PTR"
+
+# More server lookups
+ADV sadv lookup_soa                  "cs.jmu.edu SOA"
+ADV sadv lookup_ptr                  "134.126.126.99 PTR"
+ADV sadv lookup_dot                  ". NS"
+ADV sadv lookup_aaaa                 "example.com AAAA"
+ADV sadv lookup_noipv6               "www.jmu.edu AAAA"
+
+# iterative requests - unithreaded and multithreaded
+ADV iter iter_uni                    "-x 3 -i stu.cs.jmu.edu A"
+
+# Note that this test WILL fail and must be tested manually
+ADV threads iter_multi               "-x 3 -i -t www.jmu.edu A stu.cs.jmu.edu A"
+

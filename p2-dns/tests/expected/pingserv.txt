@@ -1,0 +1,13 @@
+Received 17 bytes from 127.0.0.1:
+  0001 0100 0001 0000 0000 0000 0000 0100
+  01
+
+Question: . A IN
+NOTE: XID=1 is a special case for testing purposes
+
+Sending response to 127.0.0.1:
+  0001 8180 0001 0001 0000 0000 0000 0100
+  0101 610c 726f 6f74 2d73 6572 7665 7273
+  036e 6574 0000 0100 0100 0000 0a00 04c6
+  2900 04
+

@@ -1,0 +1,27 @@
+Using fake packet:
+  0000 0100 0001 0000 0000 0000 0377 7777
+  036a 6d75 0365 6475 0000 1c00 01
+
+Answers (uncompressed):
+    record: www.jmu.edu. (type 5 = CNAME, TTL 592)
+    rdata : it-www1.jmu.edu.
+
+Authority:
+    record: jmu.edu. (type 6 = SOA, TTL 3600)
+    rdata : primary = it-ns.jmu.edu.
+            mailbox = network.jmu.edu.
+            expire  = 3600000 seconds until not authoritative
+            minimum = 3600 seconds for minimum TTL
+            refresh = 86400 seconds until refresh needed
+            retry   = 7200 seconds after failed refresh
+            serial  = 735142168
+
+Response as byte block (101 bytes):
+  0000 8180 0001 0001 0001 0000 0377 7777
+  036a 6d75 0365 6475 0000 1c00 01c0 0c00
+  0500 0100 0002 5000 0a07 6974 2d77 7777
+  31c0 10c0 1000 0600 0100 000e 1000 2605
+  6974 2d6e 73c0 1007 6e65 7477 6f72 6bc0
+  102b d161 1800 0151 8000 001c 2000 36ee
+  8000 000e 10
+

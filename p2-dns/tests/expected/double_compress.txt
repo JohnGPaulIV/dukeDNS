@@ -1,0 +1,9 @@
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 42937
+;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;example.com. IN NS
+
+;; ANSWER SECTION:
+example.com.                   IN NS 84682.     b.iana-servers.net.
+example.com.                   IN NS 84682.     a.iana-servers.net.

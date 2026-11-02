@@ -1,0 +1,8 @@
+;; ->>HEADER<<- opcode: QUERY, status: NXDOMAIN, id: 56769
+;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;5.67.101.151.in-addr.arpa. IN PTR
+
+;; AUTHORITY SECTION:
+151.in-addr.arpa.              IN SOA 3600.     pri.authdns.ripe.net. dns.ripe.net. 1752675523 3600 600 864000 3600

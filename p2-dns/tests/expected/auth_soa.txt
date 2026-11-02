@@ -1,0 +1,11 @@
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 61906
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 1, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;www.jmu.edu. IN AAAA
+
+;; ANSWER SECTION:
+www.jmu.edu.                   IN CNAME 592.    it-www1.jmu.edu.
+
+;; AUTHORITY SECTION:
+jmu.edu.                       IN SOA 3600.     it-ns.jmu.edu. network.jmu.edu. 735142168 86400 7200 3600000 3600

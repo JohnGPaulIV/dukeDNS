@@ -1,0 +1,8 @@
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 62055
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;jmu.edu. IN SOA
+
+;; ANSWER SECTION:
+jmu.edu.                       IN SOA 3600.     it-ns.jmu.edu. network.jmu.edu. 735142168 86400 7200 3600000 3600

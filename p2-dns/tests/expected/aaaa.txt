@@ -1,0 +1,13 @@
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 4801
+;; flags: qr rd ra; QUERY: 1, ANSWER: 6, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;example.com. IN AAAA
+
+;; ANSWER SECTION:
+example.com.                   IN AAAA 21.      2600:1406:3a00:21::173e:2e65
+example.com.                   IN AAAA 21.      2600:1406:bc00:53::b81e:94c8
+example.com.                   IN AAAA 21.      2600:1408:ec00:36::1736:7f24
+example.com.                   IN AAAA 21.      2600:1406:3a00:21::173e:2e66
+example.com.                   IN AAAA 21.      2600:1408:ec00:36::1736:7f31
+example.com.                   IN AAAA 21.      2600:1406:bc00:53::b81e:94ce

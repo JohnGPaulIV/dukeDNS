@@ -1,0 +1,8 @@
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 870
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;221.141.126.134.in-addr.arpa. IN PTR
+
+;; ANSWER SECTION:
+221.141.126.134.in-addr.arpa.  IN PTR 3542.     student.cs.jmu.edu.

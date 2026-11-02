@@ -1,0 +1,9 @@
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 23379
+;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;jmu.edu. IN NS
+
+;; ANSWER SECTION:
+jmu.edu.                       IN NS 1798.      it-ns2-19.jmu.edu.
+jmu.edu.                       IN NS 1798.      it-ns1-19.jmu.edu.

@@ -1,0 +1,21 @@
+Using fake packet:
+  0000 0100 0001 0000 0000 0000 0000 0200
+  01
+
+Answers (uncompressed):
+    record: . (type 2 = NS, TTL 126684)
+    rdata : a.root-servers.net.
+
+    record: . (type 2 = NS, TTL 126684)
+    rdata : b.root-servers.net.
+
+    record: . (type 2 = NS, TTL 126684)
+    rdata : c.root-servers.net.
+
+Response as byte block (78 bytes):
+  0000 8180 0001 0003 0000 0000 0000 0200
+  0100 0002 0001 0001 eedc 0014 0161 0c72
+  6f6f 742d 7365 7276 6572 7303 6e65 7400
+  0000 0200 0100 01ee dc00 0401 62c0 1e00
+  0002 0001 0001 eedc 0004 0163 c01e
+

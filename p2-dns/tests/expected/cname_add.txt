@@ -1,0 +1,11 @@
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 51120
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; QUESTION SECTION:
+;www.jmu.edu. IN CNAME
+
+;; ANSWER SECTION:
+www.jmu.edu.                   IN CNAME 592.    it-www1.jmu.edu.
+
+;; ADDITIONAL SECTION:
+it-www1.jmu.edu.               IN A 900.        134.126.126.99

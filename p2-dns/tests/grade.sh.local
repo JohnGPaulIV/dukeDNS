@@ -1,0 +1,107 @@
+#!/bin/bash
+
+function print_report {
+    REPORT=$1
+    GRADE=$2
+
+    printf "%s" "$REPORT"
+}
+
+function build_report {
+    BRD=$@
+    for branch in $BRANCHES ; do
+        PTAG=$(printf '%-30s' $branch)
+		    # if pattern matches, feature is already done and pushed
+        if [[ "$BRD" == *"$branch-PASS"* ]] ; then
+            REPORT+="$PTAG DONE"
+            REPORT+=$'\n'
+        else
+            REPORT+="$PTAG incomplete"
+            REPORT+=$'\n'
+            BFAIL="$BFAIL $branch"
+        fi
+    done
+}
+
+function eval_grade {
+    int=${BFAIL//"INTER"}
+    intfail="$(((${#BFAIL} - ${#int}) / 5))"
+    str=${BFAIL//"STR"}
+    strfail="$(((${#BFAIL} - ${#str}) / 3))"
+    if [[ $BFAIL == *"BASIC"* ]] ; then
+        GRADE="F"
+        PREREQ=$(echo $BFAIL | tr ' ' $'\\n' | grep BASIC)
+    elif [[ $BFAIL == *"MIN"* ]] ; then
+        # D requires passing BASIC, but not MIN
+        GRADE="D"
+        PREREQ=$(echo $BFAIL | tr ' ' $'\\n' | grep MIN)
+    else
+        # passing all BASIC and MIN, so now reverse:
+        if [[ $intfail -le 1 && $strfail -le 3 ]] ; then
+            GRADE="A"
+        elif [[ $intfail -le 2 && $strfail -le 4 ]] ; then
+            GRADE="B"
+        else
+            GRADE="C"
+        fi
+    fi
+}
+
+# First, check if the argument is valid
+ITESTS=itests.include
+FEATURE=$1
+if [[ $FEATURE != "status" && $FEATURE != "" ]] ; then
+    if [[ $(awk '$2 == "'$FEATURE'"' $ITESTS) == '' ]] ; then
+        echo "ERROR: Feature $FEATURE not found in itests.include"
+        exit 127
+    fi
+fi
+
+declare -a GRADES
+GRADES=("BASIC" "MIN" "INTER" "STR")
+
+BRANCHES=$(awk '$2 == "'$FEATURE'"' itests.include | awk '{print $1}' | uniq)"-$FEATURE"
+
+#for grade in "${GRADES[@]}" ; do
+#    # first, find all features for that grade
+#    features=$(grep $grade $ITESTS | awk '{print $2}')
+#    for feature in $features ; do
+#        branch=$grade-$feature
+#        if [[ "$BRANCHES" != *"$branch"* ]] ; then
+#            BRANCHES="$BRANCHES $branch"
+#        fi
+#    done
+#done
+
+REPORT=""
+BFAIL=""
+PREREQ=""
+GRADE="F"
+
+# Must convert feature to tests...
+LINES=$(awk '$2 == "'$FEATURE'"' $ITESTS)
+TESTS=""
+while IFS= read -r line || [[ -n "$line" ]] ; do
+    test=$(echo $line | awk '$2 == "'$1'"' | awk '{print $3}')
+    TESTS="$TESTS $test"
+done <<< "$LINES"
+
+#./integration.sh -f $FEATURE $TESTS
+./integration.sh $TESTS
+
+FAIL=$?
+
+if [[ $FAIL != 0 ]] ; then
+  echo "ERROR: Failed one or more test cases"
+  exit 1
+fi
+
+LEVEL=$(awk '$2 == "'$FEATURE'"' $ITESTS | awk '{print $1}' | uniq)
+FEATLEV="${LEVEL}-${FEATURE}"
+
+echo "----------------------------------------"
+REPORT=""
+BFAIL=""
+build_report ${FEATLEV}-PASS
+print_report "$REPORT" 
+echo "----------------------------------------"

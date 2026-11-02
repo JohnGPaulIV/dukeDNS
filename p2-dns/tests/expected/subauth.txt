@@ -1,0 +1,8 @@
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 10099
+;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;fac.cs.jmu.edu. IN AAAA
+
+;; AUTHORITY SECTION:
+cs.jmu.edu.                    IN SOA 900.      it-nios-gm.jmu.edu. network.jmu.edu. 14 10800 3600 2419200 900

@@ -1,0 +1,5 @@
+----------------------------------------
+iter_multi                     FAIL
+    Command line: ../digduke -x 3 -i -t www.jmu.edu A stu.cs.jmu.edu A
+----------------------------------------
+ERROR: Failed one or more test cases
